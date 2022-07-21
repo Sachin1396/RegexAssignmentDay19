@@ -35,7 +35,7 @@ public class UserRegistrationMain {
             case 5:
                 System.out.println("enter the password");
                 String password = scanner.next();
-                userInformation.validateFirstname(password,"^[a-zA-Z0-9]{8,}$");
+                userInformation.validateFirstname(password,"^(?=.*[a-z])(?=.*[A-Z])(?=.*/d)(?=.*[@$!%*?&])[A-Za-z/d@$!%*?&]{8,}$");
                 break;
             default:
                 System.out.println("enter valid option");
